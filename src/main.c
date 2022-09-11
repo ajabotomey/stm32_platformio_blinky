@@ -24,8 +24,3 @@ void LED_Init()
     GPIO_InitStruct.Speed = GPIO_SPEED_HIGH;
     HAL_GPIO_Init(LED_GPIO_PORT, &GPIO_InitStruct);
 }
-
-void SysTick_Handler(void)
-{
-    HAL_IncTick();
-}
