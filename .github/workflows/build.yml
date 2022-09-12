@@ -21,4 +21,4 @@ jobs:
         python -m pip install --upgrade pip
         pip install --upgrade platformio
     - name: Run PlatformIO
-      run: pio ci --board nucleo_f446re
+      run: pio run -e nucleo_f446re
