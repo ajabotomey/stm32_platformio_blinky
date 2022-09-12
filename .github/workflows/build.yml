@@ -9,7 +9,6 @@ jobs:
       matrix:
         os: [windows-latest]
         example: [src]
-    runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v2
       with:
