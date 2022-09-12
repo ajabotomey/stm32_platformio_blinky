@@ -19,8 +19,8 @@ jobs:
         python-version: "3.9"
     - name: Install PlatformIO
       run: |
-        pip install -U https://github.com/platformio/platformio/archive/develop.zip
-        pio pkg install --global --platform symlink://.
+        python -m pip install --upgrade pip
+        pip install --upgrade platformio
     - name: Run PlatformIO
       run: pio ci --board nucleo_f446re
       env: 
