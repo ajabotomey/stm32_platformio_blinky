@@ -8,7 +8,6 @@ jobs:
       fail-fast: false
       matrix:
         os: [windows-latest]
-        example: [src]
     steps:
     - uses: actions/checkout@v2
       with:
@@ -23,5 +22,3 @@ jobs:
         pip install --upgrade platformio
     - name: Run PlatformIO
       run: pio ci --board nucleo_f446re
-      env: 
-        PLATFORMIO_CI_SRC: ${{ matrix.example }}
