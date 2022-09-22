@@ -19,3 +19,9 @@ jobs:
         pip install --upgrade platformio
     - name: Run PlatformIO
       run: pio run -e nucleo_f446re
+    - name: Upload Artifact
+        id: upload_step
+        uses: actions/upload-artifact@v2
+        with: 
+          name: Firmware
+          path: .pio/build/nucleo_f446re/firmware.bin
