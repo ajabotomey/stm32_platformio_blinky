@@ -20,7 +20,6 @@ jobs:
     - name: Run PlatformIO
       run: pio run -e nucleo_f446re
     - name: Upload Artifact
-        id: upload_step
         uses: actions/upload-artifact@v2
         with: 
           name: Firmware
