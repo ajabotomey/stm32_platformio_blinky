@@ -1,6 +1,8 @@
 #include "../include/main.h"
 #include <unity.h>
 
+#define TEST_MAX 5
+
 void setUp(void)
 {
     LED_GPIO_CLK_ENABLE();
@@ -43,7 +45,7 @@ int main()
 
     RUN_TEST(test_led_builtin_pin_number);
 
-    for (unsigned int i = 0; i < 5; i++)
+    for (unsigned int i = 0; i < TEST_MAX; i++)
     {
         RUN_TEST(test_led_state_high);
         HAL_Delay(500);
