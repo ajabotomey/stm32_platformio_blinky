@@ -1,7 +1,7 @@
 #include "../include/main.h"
 #include <unity.h>
 
-#define TEST_MAX 5
+#define TEST_MAX (unsigned int)5
 
 void setUp(void)
 {
